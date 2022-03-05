@@ -14,8 +14,11 @@ map("n", "K", "5k")
 map("n", "L", "5l")
 
 -- Quit
-map("n", "Q", ":q! <CR>")
+map("n", "<C-q>", ":q! <CR>")
 
 -- Move text up and down
 map("v", "<C-K>", ":move '<-2<CR>gv-gv")
 map("v", "<C-J>", ":move '>+1<CR>gv-gv")
+ 
+-- Inster a empty row in normal mode
+map("n", "<Enter>", "o<ESC>")

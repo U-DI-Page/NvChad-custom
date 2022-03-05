@@ -2,7 +2,7 @@ local userPlugins = require("custom.plugins")
 local M = {}
 
 M.ui = {
-  theme = "catppuccin",
+  theme = "chadracula",
 }
 
 M.plugins = {
@@ -15,7 +15,7 @@ M.plugins = {
 
   default_plugin_config_replace = {
     nvim_tree = {
-      auto_close = true,
+      -- auto_close = true,
       git = {
         enable = true,
       },
@@ -29,7 +29,15 @@ M.plugins = {
 
 M.mappings = {
   misc = {
-    save_file = "S", -- save file using :w
+    save_file = "<C-s>", -- save file using :w
+    cheatsheet = "<leader>ch",
+    close_buffer = "<leader>x",
+    cp_whole_file = "<C-l>", -- copy all contents of current buffer
+    lineNR_toggle = "<leader>n", -- toggle line number
+    lineNR_rel_toggle = "<leader>rn",
+    update_nvchad = "<leader>uu",
+    new_buffer = "<S-t>",
+    new_tab = "<C-t>b",
   }
 }
 
